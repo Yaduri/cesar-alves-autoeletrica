@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Alves Elétrica Automotiva | Diagnóstico & Socorro Elétrico em Campo Limpo Paulista</title>
+  <meta name="description" content="Oficina mecânica e elétrica automotiva em Campo Limpo Paulista - SP. Especialista em socorro elétrico, bateria arriada, motor de partida, alternador, injeção eletrônica e acessórios. Atendimento rápido no WhatsApp (11) 97505-3297." />
+  <meta name="keywords" content="eletrica automotiva campo limpo paulista, auto eletrico campo limpo paulista, troca de bateria, motor de partida, alternador, injeção eletronica, cesar alves eletrica" />
+  <link rel="canonical" href="https://cesar-alves-autoeletrica.vercel.app/" />
+  <link rel="icon" type="image/jpeg" href="logo.jpg" />
+  
+  <!-- Open Graph / Redes Sociais -->
+  <meta property="og:type" content="business.business" />
+  <meta property="og:title" content="César Alves Elétrica Automotiva | Campo Limpo Paulista" />
+  <meta property="og:description" content="Carro não liga ou com pane elétrica? Diagnóstico computadorizado, baterias, motor de arranque e alternador com garantia e agilidade." />
+  <meta property="og:image" content="logo.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0A0C10',        // Deep black carbon matching logo
+              panel: '#11141B',
+              card: '#161922',
+              elevated: '#1F2430',
+              border: '#282F3E',
+              accent: '#E5222E',       // Official Racing Red from logo
+              accentHover: '#C61823',
+              electric: '#00D4FF',     // Neon spark diagnostic cyan
+              whatsapp: '#25D366',     // Conversion WhatsApp green
+              whatsappHover: '#1EBE5D'
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom Scrollbar & Aesthetics */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #0A0C10; }
+    ::-webkit-scrollbar-thumb { background: #282F3E; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #E5222E; }
+    
+    ::selection {
+      background-color: #E5222E;
+      color: #FFFFFF;
+    }
+
+    .glow-accent {
+      box-shadow: 0 0 28px -4px rgba(229, 34, 46, 0.45);
+    }
+    .glow-whatsapp {
+      box-shadow: 0 0 24px -2px rgba(37, 211, 102, 0.4);
+    }
+    .glow-electric {
+      box-shadow: 0 0 24px -4px rgba(0, 212, 255, 0.3);
+    }
+    
+    /* Subtle mechanical grid background */
+    .bg-grid-subtle {
+      background-size: 36px 36px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    /* Accessibility: Universal Visible Keyboard Focus Rings */
+    a:focus-visible, 
+    button:focus-visible, 
+    summary:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 2px #0A0C10, 0 0 0 4px #E5222E !important;
+    }
+
+    /* Accessibility: Motion Sensitivity Fallback */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRepair",
+    "name": "César Alves Elétrica Automotiva",
+    "image": "https://cesar-alves-autoeletrica.vercel.app/logo.jpg",
+    "telephone": "+55-11-97505-3297",
+    "url": "https://cesar-alves-autoeletrica.vercel.app/",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua José de Souza Charrua, nº 200",
+      "addressLocality": "Campo Limpo Paulista",
+      "addressRegion": "SP",
+      "postalCode": "13231-310",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -23.2081,
+      "longitude": -46.7844
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "13:00"
+      }
+    ],
+    "sameAs": [
+      "https://instagram.com/cesar_alv_eletrica_automotiva",
+      "https://instagram.com/cesar_alv5"
+    ]
+  }
+  </script>
+</head>
+
+<body class="bg-brand-dark text-slate-100 font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+  <!-- EMERGENCY STATUS TICKER -->
+  <div class="bg-brand-panel border-b border-brand-border/60 py-2 px-4 text-xs font-medium">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="relative flex h-2.5 w-2.5" aria-hidden="true">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-whatsapp opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-whatsapp"></span>
+        </span>
+        <span class="text-slate-300">Oficina & Socorro Elétrico Aberto • <strong class="text-white">Campo Limpo Paulista</strong></span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <span class="hidden sm:inline">Rua José de Souza Charrua, 200 (Jd. Corcovado)</span>
+        <a href="tel:5511975053297" class="text-brand-accent hover:text-white font-semibold transition-colors flex items-center gap-1.5 focus-visible:outline-none">
+          <i class="fa-solid fa-phone text-xs" aria-hidden="true"></i>
+          <span>(11) 97505-3297</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      
+      <!-- Brand Logo Oficial sem contatos -->
+      <a href="#" class="flex items-center gap-3 group focus-visible:outline-none rounded-lg" aria-label="Página inicial César Alves Elétrica Automotiva">
+        <div class="py-1 px-2.5 rounded-lg bg-black border border-brand-border/80 group-hover:border-brand-accent transition-colors shadow-lg">
+          <img src="logo_horizontal.png" 
+               alt="Logo César Alves Elétrica Automotiva" 
+               width="180" 
+               height="54" 
+               decoding="async" 
+               class="h-10 sm:h-12 w-auto object-contain" />
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300 uppercase tracking-wide" aria-label="Menu principal">
+        <a href="#triagem" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Diagnóstico Rápido</a>
+        <a href="#servicos" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Serviços</a>
+        <a href="#diferenciais" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Diferenciais</a>
+        <a href="#localizacao" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Onde Estamos</a>
+        <a href="#faq" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Dúvidas</a>
+      </nav>
+
+      <!-- Primary CTA button -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/5511975053297?text=Olá%20César,%20estou%20com%20um%20problema%20elétrico%20no%20meu%20carro%20e%20preciso%20de%20ajuda." 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="flex items-center gap-2 bg-brand-whatsapp hover:bg-brand-whatsappHover text-brand-dark font-bold text-xs sm:text-sm px-4 py-2.5 rounded-lg uppercase tracking-wider transition-all glow-whatsapp">
+          <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+          <span>WhatsApp Direto</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION: URGÊNCIA & AUTORIDADE -->
+    <section class="relative bg-brand-dark bg-grid-subtle pt-12 pb-20 lg:pt-16 lg:pb-28 overflow-hidden border-b border-brand-border/60">
+      
+      <!-- Ambient Radial Glows com o Vermelho Oficial -->
+      <div class="absolute top-1/4 -left-20 w-96 h-96 bg-brand-accent/20 rounded-full blur-[140px] pointer-events-none" aria-hidden="true"></div>
+      <div class="absolute top-1/3 -right-20 w-96 h-96 bg-brand-electric/10 rounded-full blur-[140px] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <!-- Left: Problem & Urgency Pitch -->
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-brand-panel border border-brand-border w-fit">
+              <span class="w-2 h-2 rounded-full bg-brand-accent animate-ping" aria-hidden="true"></span>
+              <span class="text-xs font-bold uppercase tracking-wider text-slate-200">Socorro Elétrico & Oficina Especializada</span>
+            </div>
+
+            <h1 class="font-display font-extrabold text-3xl sm:text-5xl lg:text-5xl tracking-tight text-white uppercase leading-[1.1]">
+              Carro não dá partida ou com <span class="text-brand-accent">pane elétrica</span>?
+            </h1>
+
+            <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+              Não fique parado na rua. Na oficina <strong>César Alves Elétrica Automotiva</strong> em Campo Limpo Paulista, realizamos diagnóstico de precisão com scanner OBD-II, socorro de bateria, reparo de motor de arranque e alternador com garantia e transparência.
+            </p>
+
+            <!-- Direct CTAs -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+              <a href="https://wa.me/5511975053297?text=Olá%20César,%20meu%20carro%20parou/não%20liga.%20Preciso%20de%20atendimento%20urgente!" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="flex items-center justify-center gap-2.5 bg-brand-whatsapp hover:bg-brand-whatsappHover text-brand-dark font-extrabold text-sm px-6 py-4 rounded-xl uppercase tracking-wider glow-whatsapp transition-transform hover:scale-[1.02]">
+                <i class="fa-brands fa-whatsapp text-xl" aria-hidden="true"></i>
+                <span>Falar no WhatsApp Agora</span>
+              </a>
+
+              <a href="tel:5511975053297" 
+                 class="flex items-center justify-center gap-2 bg-brand-panel hover:bg-brand-elevated border border-brand-border text-white font-bold text-sm px-6 py-4 rounded-xl uppercase tracking-wider transition-colors">
+                <i class="fa-solid fa-phone text-brand-accent" aria-hidden="true"></i>
+                <span>Ligar: (11) 97505-3297</span>
+              </a>
+            </div>
+
+            <!-- Trust Pills -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-4 border-t border-brand-border/60">
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                <i class="fa-solid fa-circle-check text-brand-whatsapp text-sm" aria-hidden="true"></i>
+                <span>Teste de Bateria Grátis</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                <i class="fa-solid fa-microchip text-brand-electric text-sm" aria-hidden="true"></i>
+                <span>Scanner Computadorizado</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                <i class="fa-solid fa-shield-halved text-brand-accent text-sm" aria-hidden="true"></i>
+                <span>Garantia de Serviço</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+                <i class="fa-solid fa-credit-card text-slate-400 text-sm" aria-hidden="true"></i>
+                <span>Parcelamento Fácil</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Interactive Live Status Terminal com o Logo Oficial -->
+          <div class="lg:col-span-5">
+            <div class="bg-brand-panel border border-brand-border rounded-2xl p-6 sm:p-7 relative shadow-2xl overflow-hidden">
+              
+              <!-- Top Banner com Logo Oficial e Status -->
+              <div class="flex items-center justify-between pb-4 border-b border-brand-border/80 gap-3">
+                <div class="flex items-center gap-2">
+                  <div class="w-2.5 h-2.5 rounded-full bg-brand-accent" aria-hidden="true"></div>
+                  <span class="font-display font-bold text-xs sm:text-sm uppercase text-white tracking-wide">Status de Oficina</span>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded bg-brand-whatsapp/20 text-brand-whatsapp border border-brand-whatsapp/30">
+                  Pronto para Atender
+                </span>
+              </div>
+
+              <!-- Diagnostic checklist cards -->
+              <div class="space-y-3.5 my-5">
+                
+                <div class="p-3.5 rounded-xl bg-brand-card border border-brand-border/70 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-brand-electric/15 text-brand-electric flex items-center justify-center">
+                      <i class="fa-solid fa-car-battery text-lg" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold uppercase text-white">Análise de Bateria & Carga</div>
+                      <div class="text-[11px] text-slate-400">Verificação digital na hora</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-extrabold text-brand-whatsapp uppercase bg-brand-whatsapp/10 px-2 py-0.5 rounded">100% Grátis</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-brand-card border border-brand-border/70 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-brand-accent/15 text-brand-accent flex items-center justify-center">
+                      <i class="fa-solid fa-gears text-lg" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold uppercase text-white">Motor de Partida & Alternador</div>
+                      <div class="text-[11px] text-slate-400">Troca de escovas, placas e bendix</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-slate-300 uppercase">Peças Novas</span>
+                </div>
+
+                <div class="p-3.5 rounded-xl bg-brand-card border border-brand-border/70 flex items-center justify-between">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                      <i class="fa-solid fa-triangle-exclamation text-lg" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold uppercase text-white">Luz da Injeção Acesa?</div>
+                      <div class="text-[11px] text-slate-400">Varredura e reset de erros OBD-II</div>
+                    </div>
+                  </div>
+                  <span class="text-xs font-bold text-amber-400 uppercase">Multimarcas</span>
+                </div>
+
+              </div>
+
+              <!-- Direct fast action box -->
+              <div class="pt-4 border-t border-brand-border/80 flex items-center justify-between gap-4">
+                <div>
+                  <span class="text-[11px] font-semibold text-slate-400 uppercase block">Atendimento com César Alves</span>
+                  <span class="text-sm font-bold text-white">(11) 97505-3297</span>
+                </div>
+                <a href="https://wa.me/5511975053297?text=Olá%20César,%20gostaria%20de%20um%20diagnóstico%20rápido%20para%20o%20meu%20carro."
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   class="px-4 py-2 bg-brand-accent hover:bg-brand-accentHover text-white text-xs font-bold uppercase tracking-wider rounded-lg transition-colors flex items-center gap-2 glow-accent">
+                  <span>Pedir Orçamento</span>
+                  <i class="fa-solid fa-arrow-right text-xs" aria-hidden="true"></i>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: TRIAGEM INTERATIVA (DIAGNÓSTICO EM 1 CLIQUE) -->
+    <section id="triagem" class="py-16 bg-brand-panel border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="max-w-3xl mx-auto text-center mb-10">
+          <h2 class="font-display font-bold text-2xl sm:text-3xl text-white uppercase">
+            O que está acontecendo com o seu veículo?
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base mt-2">
+            Clique no sintoma do seu carro para enviar uma mensagem detalhada e receber orientação técnica imediata:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="symptom-cards">
+          
+          <!-- Sintoma 1 -->
+          <button onclick="sendDiagnostic('O carro dá partida fraca ou estalos e não liga (suspeita de bateria ou motor de arranque)')"
+                  class="group text-left p-5 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border hover:border-brand-accent transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-brand-accent/20 text-brand-accent flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-power-off text-xl" aria-hidden="true"></i>
+              </div>
+              <h3 class="font-bold text-white text-base uppercase leading-snug">
+                Carro não liga / Partida pesada
+              </h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Dá estalos mas não vira, painel pisca ou apaga ao girar a chave.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs font-bold text-brand-accent uppercase">
+              <span>Enviar esse sintoma</span>
+              <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </div>
+          </button>
+
+          <!-- Sintoma 2 -->
+          <button onclick="sendDiagnostic('Luz da injeção acendeu no painel e o motor está falhando ou sem força')"
+                  class="group text-left p-5 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border hover:border-brand-electric transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-brand-electric/20 text-brand-electric flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-triangle-exclamation text-xl" aria-hidden="true"></i>
+              </div>
+              <h3 class="font-bold text-white text-base uppercase leading-snug">
+                Luz da Injeção Eletrônica Acesa
+              </h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Carro engasgando, sem potência ou consumindo combustível em excesso.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs font-bold text-brand-electric uppercase">
+              <span>Enviar esse sintoma</span>
+              <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </div>
+          </button>
+
+          <!-- Sintoma 3 -->
+          <button onclick="sendDiagnostic('Bateria descarregando sozinha ou luz da bateria acesa no painel')"
+                  class="group text-left p-5 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border hover:border-amber-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-car-battery text-xl" aria-hidden="true"></i>
+              </div>
+              <h3 class="font-bold text-white text-base uppercase leading-snug">
+                Luz da Bateria / Fuga de Corrente
+              </h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Alternador não carrega ou o carro descarrega a bateria de um dia pro outro.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs font-bold text-amber-400 uppercase">
+              <span>Enviar esse sintoma</span>
+              <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </div>
+          </button>
+
+          <!-- Sintoma 4 -->
+          <button onclick="sendDiagnostic('Cheiro de queimado, fumaça ou fiação esquentando')"
+                  class="group text-left p-5 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border hover:border-rose-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-rose-500/20 text-rose-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-fire-flame-curved text-xl" aria-hidden="true"></i>
+              </div>
+              <h3 class="font-bold text-white text-base uppercase leading-snug">
+                Cheiro de Queimado / Curto
+              </h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Risco elétrico imediato, fusíveis queimando repetidamente ou fiação danificada.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs font-bold text-rose-400 uppercase">
+              <span>Urgência Máxima</span>
+              <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </div>
+          </button>
+
+          <!-- Sintoma 5 -->
+          <button onclick="sendDiagnostic('Vidro elétrico travado, alarme disparando ou travas com defeito')"
+                  class="group text-left p-5 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border hover:border-sky-500 transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-lock text-xl" aria-hidden="true"></i>
+              </div>
+              <h3 class="font-bold text-white text-base uppercase leading-snug">
+                Vidros, Travas & Alarme
+              </h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Vidro elétrico não sobe, travas não acionam ou alarme disparando sem parar.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs font-bold text-sky-400 uppercase">
+              <span>Enviar esse sintoma</span>
+              <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </div>
+          </button>
+
+          <!-- Sintoma 6 -->
+          <button onclick="sendDiagnostic('Gostaria de instalar Som automotivo, Central Multimídia, Câmera de Ré ou Super LED')"
+                  class="group text-left p-5 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border hover:border-brand-whatsapp transition-all flex flex-col justify-between">
+            <div>
+              <div class="w-10 h-10 rounded-lg bg-brand-whatsapp/20 text-brand-whatsapp flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                <i class="fa-solid fa-volume-high text-xl" aria-hidden="true"></i>
+              </div>
+              <h3 class="font-bold text-white text-base uppercase leading-snug">
+                Instalação de Som & Acessórios
+              </h3>
+              <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+                Centrais multimídia CarPlay/Android, módulos de som, câmeras e iluminação LED.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-brand-border flex items-center justify-between text-xs font-bold text-brand-whatsapp uppercase">
+              <span>Pedir Orçamento</span>
+              <i class="fa-solid fa-paper-plane text-xs group-hover:translate-x-1 transition-transform" aria-hidden="true"></i>
+            </div>
+          </button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: SERVIÇOS TÉCNICOS COMPLETOS -->
+    <section id="servicos" class="py-20 bg-brand-dark border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Especialidade Mecânica & Elétrica</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-white uppercase mt-1">
+              Serviços de Precisão Automotiva
+            </h2>
+          </div>
+          <p class="text-slate-400 text-sm max-w-md">
+            Trabalhamos com equipamentos calibrados e peças de procedência para garantir durabilidade, segurança e funcionamento perfeito do seu automóvel.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <!-- Card 1 -->
+          <div class="p-6 rounded-2xl bg-brand-panel border border-brand-border flex flex-col justify-between hover:border-brand-accent/50 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center">
+                  <i class="fa-solid fa-microchip text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-electric bg-brand-electric/10 px-2.5 py-1 rounded">OBD-II Multimarcas</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase">Diagnóstico Computadorizado</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                Leitura eletrônica completa dos módulos e sensores de injeção, freios ABS e airbag. Apagamos falhas intermitentes e encontramos o defeito real sem troca de peças desnecessárias.
+              </p>
+            </div>
+            <a href="https://wa.me/5511975053297?text=Olá%20César,%20preciso%20de%20um%20diagnóstico%20computadorizado%20com%20scanner%20no%20meu%20carro." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="mt-6 w-full py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-accent hover:text-white border border-brand-border text-slate-200 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-between">
+              <span>Agendar Scanner</span>
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-6 rounded-2xl bg-brand-panel border border-brand-border flex flex-col justify-between hover:border-brand-accent/50 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center">
+                  <i class="fa-solid fa-gears text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-whatsapp bg-brand-whatsapp/10 px-2.5 py-1 rounded">Revisão Completa</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase">Motor de Partida & Alternador</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                Recondicionamento e substituição de escovas, porta-escovas, automáticos, bendix, induzido, regulador de voltagem e ponte retificadora. Teste em bancada de carga.
+              </p>
+            </div>
+            <a href="https://wa.me/5511975053297?text=Olá%20César,%20meu%20motor%20de%20partida%20ou%20alternador%20está%20com%20problema." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="mt-6 w-full py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-accent hover:text-white border border-brand-border text-slate-200 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-between">
+              <span>Solicitar Orçamento</span>
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="p-6 rounded-2xl bg-brand-panel border border-brand-border flex flex-col justify-between hover:border-brand-accent/50 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-whatsapp/15 text-brand-whatsapp flex items-center justify-center">
+                  <i class="fa-solid fa-car-battery text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-brand-whatsapp bg-brand-whatsapp/10 px-2.5 py-1 rounded">Teste Grátis</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase">Baterias & Análise de Fuga</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                Teste de vida útil e condutância da bateria, medição precisa de amperagem do alternador e teste com alicate amperímetro para achar fugas ocultas que descarregam a bateria.
+              </p>
+            </div>
+            <a href="https://wa.me/5511975053297?text=Olá%20César,%20preciso%20testar/trocar%20a%20bateria%20do%20meu%20carro." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="mt-6 w-full py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-accent hover:text-white border border-brand-border text-slate-200 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-between">
+              <span>Trocar Bateria</span>
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="p-6 rounded-2xl bg-brand-panel border border-brand-border flex flex-col justify-between hover:border-brand-accent/50 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-electric/15 text-brand-electric flex items-center justify-center">
+                  <i class="fa-solid fa-plug text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-300 bg-slate-800 px-2.5 py-1 rounded">Chicotes & Painel</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase">Pane Elétrica & Curto-Circuito</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                Reparação de fiações rompidas, soquetes derretidos, caixa de fusíveis, relés de alta corrente e restauração de chicotes elétricos originais sem gambiarras.
+              </p>
+            </div>
+            <a href="https://wa.me/5511975053297?text=Olá%20César,%20meu%20carro%20está%20com%20pane%20elétrica/curto-circuito." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="mt-6 w-full py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-accent hover:text-white border border-brand-border text-slate-200 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-between">
+              <span>Reparar Chicote</span>
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="p-6 rounded-2xl bg-brand-panel border border-brand-border flex flex-col justify-between hover:border-brand-accent/50 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/15 text-amber-400 flex items-center justify-center">
+                  <i class="fa-solid fa-lightbulb text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-300 bg-slate-800 px-2.5 py-1 rounded">Iluminação</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase">Super LED, Milhas & Faróis</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                Instalação de lâmpadas LED de alta performance com canceler (sem acusar erro no painel), instalação de faróis auxiliares/neblina, lanternas e regulagem de foco.
+              </p>
+            </div>
+            <a href="https://wa.me/5511975053297?text=Olá%20César,%20gostaria%20de%20instalar%20Super%20LED%20ou%20faróis%20no%20meu%20carro." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="mt-6 w-full py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-accent hover:text-white border border-brand-border text-slate-200 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-between">
+              <span>Orçar Iluminação</span>
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="p-6 rounded-2xl bg-brand-panel border border-brand-border flex flex-col justify-between hover:border-brand-accent/50 transition-colors">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <div class="w-12 h-12 rounded-xl bg-brand-whatsapp/15 text-brand-whatsapp flex items-center justify-center">
+                  <i class="fa-solid fa-sliders text-2xl" aria-hidden="true"></i>
+                </div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-slate-300 bg-slate-800 px-2.5 py-1 rounded">Som & Acessórios</span>
+              </div>
+              <h3 class="font-display font-bold text-lg text-white uppercase">Multimídias, Som & Travas</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
+                Instalação profissional de centrais multimídia Android, câmera de ré, sensores de estacionamento, reparo em máquinas de vidro elétrico, travas elétricas e alarmes.
+              </p>
+            </div>
+            <a href="https://wa.me/5511975053297?text=Olá%20César,%20quero%20instalar%20multimídia/som/acessórios%20no%20meu%20veículo." 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="mt-6 w-full py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-accent hover:text-white border border-brand-border text-slate-200 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-between">
+              <span>Orçar Acessórios</span>
+              <i class="fa-solid fa-arrow-right text-sm" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: DIFERENCIAIS & AUTORIDADE -->
+    <section id="diferenciais" class="py-20 bg-brand-panel border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Por Que Escolher Nossa Oficina</span>
+            <h2 class="font-display font-bold text-3xl sm:text-4xl text-white uppercase leading-tight">
+              Atendimento Direto com o Especialista César Alves
+            </h2>
+            <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+              Muitas oficinas trocam peças na tentativa e erro e deixam a conta para você. Aqui na <strong>César Alves Elétrica Automotiva</strong>, cada diagnóstico é baseado em testes elétricos concretos e varredura de scanner.
+            </p>
+            
+            <div class="space-y-4 pt-2">
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-accent/20 text-brand-accent flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-circle-check text-sm" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm uppercase">Transparência nos Orçamentos</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Você entende exatamente o que causou o problema e aprova o valor antes de qualquer intervenção.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-electric/20 text-brand-electric flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-wrench text-sm" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm uppercase">Instalação Limpa Padrão Montadora</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Fiações protegidas com tubos corrugados, solda técnica e conectores corretos para não desvalorizar o seu carro.</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <div class="w-8 h-8 rounded-lg bg-brand-whatsapp/20 text-brand-whatsapp flex items-center justify-center shrink-0 mt-0.5">
+                  <i class="fa-solid fa-location-dot text-sm" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h4 class="font-bold text-white text-sm uppercase">Localização Estratégica em Campo Limpo Paulista</h4>
+                  <p class="text-xs text-slate-400 mt-0.5">Fácil acesso no Jardim Corcovado, atendendo motoristas de Campo Limpo, Várzea Paulista e Jundiaí.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Redes Sociais do Instagram -->
+            <div class="flex flex-wrap items-center gap-3 pt-4 border-t border-brand-border">
+              <span class="text-xs font-semibold text-slate-400 uppercase">Siga no Instagram:</span>
+              <a href="https://instagram.com/cesar_alv_eletrica_automotiva" target="_blank" rel="noopener noreferrer" 
+                 class="px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-elevated border border-brand-border text-xs font-semibold text-slate-200 transition-colors flex items-center gap-2">
+                <i class="fa-brands fa-instagram text-brand-accent text-sm" aria-hidden="true"></i>
+                <span>@cesar_alv_eletrica_automotiva</span>
+              </a>
+              <a href="https://instagram.com/cesar_alv5" target="_blank" rel="noopener noreferrer" 
+                 class="px-3 py-1.5 rounded-lg bg-brand-card hover:bg-brand-elevated border border-brand-border text-xs font-semibold text-slate-200 transition-colors flex items-center gap-2">
+                <i class="fa-brands fa-instagram text-brand-electric text-sm" aria-hidden="true"></i>
+                <span>@cesar_alv5</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Métricas Bento -->
+          <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-center">
+              <span class="font-display font-black text-4xl text-brand-accent">+10</span>
+              <span class="text-xs font-bold uppercase text-white mt-1">Anos na Região</span>
+              <span class="text-[11px] text-slate-400 mt-1">Experiência prática com motores e injeção.</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-center">
+              <span class="font-display font-black text-4xl text-brand-whatsapp">100%</span>
+              <span class="text-xs font-bold uppercase text-white mt-1">Garantia Técnica</span>
+              <span class="text-[11px] text-slate-400 mt-1">Tranquilidade e segurança em cada reparo.</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-center">
+              <span class="font-display font-black text-3xl text-brand-electric">OBD-II</span>
+              <span class="text-xs font-bold uppercase text-white mt-1">Scanner Atualizado</span>
+              <span class="text-[11px] text-slate-400 mt-1">Compatível com nacionais e importados.</span>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-center">
+              <span class="font-display font-black text-3xl text-white">5★</span>
+              <span class="text-xs font-bold uppercase text-white mt-1">Atendimento Direto</span>
+              <span class="text-[11px] text-slate-400 mt-1">Sem intermediários ou burocracia.</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: LOCALIZAÇÃO & HORÁRIOS -->
+    <section id="localizacao" class="py-20 bg-brand-dark border-b border-brand-border/60">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Onde Encontrar a Oficina</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-white uppercase mt-1">
+            Endereço & Horário de Atendimento
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+          
+          <!-- Informações de endereço e contato -->
+          <div class="lg:col-span-5 flex flex-col justify-between gap-6 bg-brand-panel p-6 sm:p-8 rounded-2xl border border-brand-border">
+            
+            <div class="space-y-6">
+              
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-brand-accent/15 text-brand-accent flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-location-dot text-xl" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-sm uppercase">Endereço da Oficina</h3>
+                  <p class="text-sm text-slate-300 mt-1 leading-relaxed">
+                    Rua José de Souza Charrua, nº 200<br />
+                    Jd. Corcovado, Campo Limpo Paulista - SP<br />
+                    <span class="text-xs text-slate-400">CEP: 13231-310</span>
+                  </p>
+                  <button onclick="copyAddress()" id="copy-btn" class="mt-2 text-xs font-semibold text-brand-accent hover:underline flex items-center gap-1.5 focus-visible:outline-none">
+                    <i class="fa-solid fa-copy text-xs" aria-hidden="true"></i>
+                    <span>Copiar endereço completo</span>
+                  </button>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-brand-electric/15 text-brand-electric flex items-center justify-center shrink-0">
+                  <i class="fa-solid fa-clock text-xl" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-sm uppercase">Horário de Funcionamento</h3>
+                  <div class="text-sm text-slate-300 mt-1 space-y-1">
+                    <div class="flex justify-between gap-4">
+                      <span>Segunda a Sexta:</span>
+                      <strong class="text-white">08:00 às 18:00</strong>
+                    </div>
+                    <div class="flex justify-between gap-4">
+                      <span>Sábado:</span>
+                      <strong class="text-white">08:00 às 13:00</strong>
+                    </div>
+                    <div class="flex justify-between gap-4 text-slate-400">
+                      <span>Domingo:</span>
+                      <span>Fechado</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <div class="w-10 h-10 rounded-xl bg-brand-whatsapp/15 text-brand-whatsapp flex items-center justify-center shrink-0">
+                  <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i>
+                </div>
+                <div>
+                  <h3 class="font-bold text-white text-sm uppercase">WhatsApp & Contato Direto</h3>
+                  <p class="text-sm text-slate-300 mt-1">
+                    <a href="https://wa.me/5511975053297" target="_blank" rel="noopener noreferrer" class="text-brand-whatsapp hover:underline font-bold text-base focus-visible:outline-none">
+                      (11) 97505-3297
+                    </a>
+                  </p>
+                  <span class="text-xs text-slate-400 block mt-0.5">Resposta ágil para orçamentos e emergências</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Botões de Traçar Rota -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4 border-t border-brand-border">
+              <a href="https://maps.google.com/?q=Rua+Jose+de+Souza+Charrua+200+Campo+Limpo+Paulista+SP" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border text-center text-xs font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition-colors">
+                <i class="fa-solid fa-map-location-dot text-brand-accent" aria-hidden="true"></i>
+                <span>Google Maps</span>
+              </a>
+
+              <a href="https://waze.com/ul?q=Rua%20Jose%20de%20Souza%20Charrua%20200%20Campo%20Limpo%20Paulista" 
+                 target="_blank" 
+                 rel="noopener noreferrer"
+                 class="py-3 px-4 rounded-xl bg-brand-card hover:bg-brand-elevated border border-brand-border text-center text-xs font-bold uppercase tracking-wider text-white flex items-center justify-center gap-2 transition-colors">
+                <i class="fa-solid fa-location-arrow text-brand-electric" aria-hidden="true"></i>
+                <span>Waze</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Mapa Interativo do Google Maps -->
+          <div class="lg:col-span-7 rounded-2xl overflow-hidden border border-brand-border shadow-xl min-h-[380px] bg-brand-card">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.654877372228!2d-46.78696892404092!3d-23.18279897906059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf211a76f2d213%3A0x71ee94e6677f516a!2sR.%20Jos%C3%A9%20de%20Souza%20Charrua%2C%20200%20-%20Jardim%20Corcovado%2C%20Campo%20Limpo%20Paulista%20-%20SP%2C%2013231-310!5e0!3m2!1spt-BR!2sbr!4v1711600000000!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="100%" 
+              style="border:0; min-height: 380px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização Oficina César Alves Elétrica Automotiva">
+            </iframe>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FAQ TÉCNICO DE URGÊNCIA -->
+    <section id="faq" class="py-20 bg-brand-panel border-b border-brand-border/60">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="text-center mb-12">
+          <span class="text-xs font-bold uppercase tracking-widest text-brand-accent">Dúvidas Frequentes</span>
+          <h2 class="font-display font-bold text-3xl sm:text-4xl text-white uppercase mt-1">
+            Perguntas Comuns sobre Reparo Elétrico
+          </h2>
+        </div>
+
+        <div class="space-y-4">
+          
+          <details class="group p-5 rounded-2xl bg-brand-card border border-brand-border cursor-pointer focus-within:border-brand-accent">
+            <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between uppercase list-none focus-visible:outline-none rounded">
+              <span>Como saber se o problema é na bateria ou no motor de arranque?</span>
+              <i class="fa-solid fa-chevron-down text-brand-accent text-sm group-open:rotate-180 transition-transform" aria-hidden="true"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+              Geralmente, quando a bateria está arriada, o painel fica fraco e ao dar partida você escuta estalos rápidos ("tec-tec-tec") ou as luzes apagam totalmente. Já quando o motor de arranque trava, o painel acende forte e normal, mas ao girar a chave nada acontece ou você escuta apenas um estalo seco. Na nossa oficina fazemos o teste de carga para diagnosticar na hora sem adivinhação.
+            </p>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-brand-card border border-brand-border cursor-pointer focus-within:border-brand-accent">
+            <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between uppercase list-none focus-visible:outline-none rounded">
+              <span>O teste de bateria e alternador é realmente gratuito?</span>
+              <i class="fa-solid fa-chevron-down text-brand-accent text-sm group-open:rotate-180 transition-transform" aria-hidden="true"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+              Sim! Você pode trazer seu veículo até nossa oficina e fazemos o teste com analisador eletrônico de condutância e medidor de carga do alternador sem nenhum custo. Se sua bateria estiver boa, nós avisamos; não trocamos peças desnecessárias.
+            </p>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-brand-card border border-brand-border cursor-pointer focus-within:border-brand-accent">
+            <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between uppercase list-none focus-visible:outline-none rounded">
+              <span>Vocês atendem ou dão socorro fora da oficina?</span>
+              <i class="fa-solid fa-chevron-down text-brand-accent text-sm group-open:rotate-180 transition-transform" aria-hidden="true"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+              Para atendimentos de socorro (como ponte de partida ou troca emergencial de bateria no local) em Campo Limpo Paulista e imediações, consulte nossa disponibilidade em tempo real enviando uma mensagem no WhatsApp. Havendo técnico disponível na hora, prestamos o suporte com prioridade.
+            </p>
+          </details>
+
+          <details class="group p-5 rounded-2xl bg-brand-card border border-brand-border cursor-pointer focus-within:border-brand-accent">
+            <summary class="font-bold text-white text-sm sm:text-base flex items-center justify-between uppercase list-none focus-visible:outline-none rounded">
+              <span>Quais são as formas de pagamento aceitas?</span>
+              <i class="fa-solid fa-chevron-down text-brand-accent text-sm group-open:rotate-180 transition-transform" aria-hidden="true"></i>
+            </summary>
+            <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+              Aceitamos Pix, cartões de débito e crédito com possibilidade de parcelamento. Emitimos garantia formal de todos os serviços e peças aplicadas.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: BANNER FINAL DE CONVERSÃO -->
+    <section class="py-20 bg-brand-dark relative overflow-hidden">
+      <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(229,34,46,0.15),transparent_70%)] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 flex flex-col items-center gap-6">
+        
+        <!-- Emblema / Logo no CTA Final com dimensões anti-CLS -->
+        <div class="p-2 rounded-xl bg-black border border-brand-border/80 shadow-2xl glow-accent">
+          <img src="logo_horizontal.png" 
+               alt="Logo César Alves" 
+               width="200" 
+               height="64" 
+               decoding="async" 
+               class="h-14 sm:h-16 w-auto object-contain" />
+        </div>
+
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white uppercase leading-tight">
+          Pronto para resolver o problema do seu carro?
+        </h2>
+
+        <p class="text-slate-300 text-base sm:text-lg max-w-xl">
+          Fale diretamente com o César Alves pelo WhatsApp. Envie o modelo do seu carro e o que está acontecendo para receber um pré-diagnóstico rápido e sem compromisso.
+        </p>
+
+        <div class="flex flex-col sm:flex-row items-center gap-4 pt-2 w-full justify-center">
+          <a href="https://wa.me/5511975053297?text=Olá%20César,%20gostaria%20de%20agendar%20um%20horário%20ou%20tirar%20uma%20dúvida%20sobre%20meu%20carro." 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="w-full sm:w-auto flex items-center justify-center gap-2.5 bg-brand-whatsapp hover:bg-brand-whatsappHover text-brand-dark font-black text-sm px-8 py-4 rounded-xl uppercase tracking-wider glow-whatsapp transition-transform hover:scale-[1.02]">
+            <i class="fa-brands fa-whatsapp text-2xl" aria-hidden="true"></i>
+            <span>Chamar César Alves no WhatsApp</span>
+          </a>
+
+          <a href="tel:5511975053297" 
+             class="w-full sm:w-auto flex items-center justify-center gap-2 bg-brand-card hover:bg-brand-elevated border border-brand-border text-white font-bold text-sm px-6 py-4 rounded-xl uppercase tracking-wider transition-colors">
+            <i class="fa-solid fa-phone text-brand-accent text-lg" aria-hidden="true"></i>
+            <span>(11) 97505-3297</span>
+          </a>
+        </div>
+
+        <span class="text-xs font-semibold text-slate-400 uppercase tracking-wider">
+          Atendimento transparente • Especialista local em Campo Limpo Paulista
+        </span>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-brand-dark border-t border-brand-border/60 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10 items-start">
+        
+        <div class="md:col-span-2 space-y-4">
+          <div class="p-2 rounded-xl bg-black border border-brand-border/80 w-fit shadow-lg">
+            <img src="logo_horizontal.png" 
+                 alt="Logo Oficial César Alves Elétrica Automotiva" 
+                 width="200" 
+                 height="64" 
+                 decoding="async" 
+                 class="h-14 sm:h-16 w-auto object-contain" />
+          </div>
+          <p class="text-slate-400 max-w-sm leading-relaxed">
+            Oficina técnica especializada em diagnóstico computadorizado, socorro de bateria, alternadores, motores de partida, injeção eletrônica e instalação de acessórios em Campo Limpo Paulista - SP.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Atendimento</h4>
+          <p class="leading-relaxed">
+            Rua José de Souza Charrua, 200<br />
+            Jd. Corcovado - Campo Limpo Paulista, SP<br />
+            CEP 13231-310
+          </p>
+          <div class="mt-2 text-brand-whatsapp font-bold text-sm">
+            (11) 97505-3297
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-white uppercase tracking-wider mb-3">Conecte-se</h4>
+          <div class="flex flex-col gap-2">
+            <a href="https://instagram.com/cesar_alv_eletrica_automotiva" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-brand-accent text-sm" aria-hidden="true"></i>
+              <span>@cesar_alv_eletrica_automotiva</span>
+            </a>
+            <a href="https://instagram.com/cesar_alv5" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-instagram text-brand-electric text-sm" aria-hidden="true"></i>
+              <span>@cesar_alv5</span>
+            </a>
+            <a href="https://wa.me/5511975053297" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-brand-whatsapp text-sm" aria-hidden="true"></i>
+              <span>WhatsApp Comercial</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 border-t border-brand-border/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <span>© 2026 César Alves Elétrica Automotiva. Todos os direitos reservados.</span>
+        <span>Campo Limpo Paulista • Várzea Paulista • Jundiaí</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING MOBILE SOS / WHATSAPP ACTION BUTTON -->
+  <div class="fixed bottom-4 right-4 z-50 flex items-center gap-2">
+    <a href="https://wa.me/5511975053297?text=Olá%20César,%20estou%20precisando%20de%20atendimento%20para%20o%20meu%20carro." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       aria-label="Chamar César no WhatsApp"
+       class="flex items-center gap-2 px-4 py-3 bg-brand-whatsapp hover:bg-brand-whatsappHover text-brand-dark rounded-full font-extrabold text-xs uppercase tracking-wider glow-whatsapp shadow-2xl transition-transform hover:scale-105">
+      <i class="fa-brands fa-whatsapp text-lg" aria-hidden="true"></i>
+      <span class="hidden sm:inline">WhatsApp César Alves</span>
+      <span class="sm:hidden">WhatsApp SOS</span>
+    </a>
+  </div>
+
+  <!-- SCRIPT PARA TRIAGEM E COPIAR ENDEREÇO -->
+  <script>
+    function sendDiagnostic(symptom) {
+      const phone = "5511975053297";
+      const message = encodeURIComponent(`Olá César, acessei o site e estou com o seguinte problema no meu veículo:\n\n👉 *${symptom}*\n\nPoderia me orientar e me passar uma estimativa de orçamento?`);
+      window.open(`https://wa.me/${phone}?text=${message}`, '_blank');
+    }
+
+    function copyAddress() {
+      const address = "Rua José de Souza Charrua, nº 200, Jd. Corcovado, Campo Limpo Paulista - SP, CEP 13231-310";
+      navigator.clipboard.writeText(address).then(() => {
+        const btn = document.getElementById('copy-btn');
+        const originalHtml = btn.innerHTML;
+        btn.innerHTML = '<i class="fa-solid fa-check text-xs text-brand-whatsapp" aria-hidden="true"></i><span class="text-brand-whatsapp">Endereço copiado com sucesso!</span>';
+        setTimeout(() => {
+          btn.innerHTML = originalHtml;
+        }, 3000);
+      });
+    }
+  </script>
+
+</body>
+</html>
