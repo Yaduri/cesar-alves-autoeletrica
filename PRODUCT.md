@@ -29,7 +29,7 @@ Oficina especializada de precisão eletroeletrônica e atendimento direto com o 
 - Acessada majoritariamente por smartphones (frequentemente na beira da estrada, na garagem de casa ou parado no trânsito após pane elétrica).
 - O canal definitivo de fechamento e orçamento é o WhatsApp direto do César: `(11) 97505-3297`.
 - Localização física: Rua José de Souza Charrua, nº 200, Jd. Corcovado, Campo Limpo Paulista - SP.
-- Horário comercial: Segunda a Sexta 08h-18h, Sábado 08h-13h.
+- Horário comercial: Segunda a Sexta 08h-18h, Sábado 08h-12h, Domingo Fechado.
 
 ## Capabilities and Constraints
 
