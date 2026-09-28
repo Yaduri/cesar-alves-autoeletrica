@@ -172,22 +172,31 @@
 
   <!-- NAVIGATION HEADER -->
   <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border/60">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative">
       
-      <!-- Brand Logo Oficial sem contatos -->
-      <a href="#" class="flex items-center gap-3 group focus-visible:outline-none rounded-lg" aria-label="Página inicial César Alves Elétrica Automotiva">
-        <div class="py-1 px-2.5 rounded-lg bg-black border border-brand-border/80 group-hover:border-brand-accent transition-colors shadow-lg">
-          <img src="logo_horizontal.png" 
-               alt="Logo César Alves Elétrica Automotiva" 
-               width="180" 
-               height="54" 
-               decoding="async" 
-               class="h-10 sm:h-12 w-auto object-contain" />
-        </div>
-      </a>
+      <!-- Mobile: Atalho de Ligação à esquerda para equilíbrio visual -->
+      <div class="md:hidden flex items-center">
+        <a href="tel:5511975053297" class="w-10 h-10 rounded-lg bg-brand-panel border border-brand-border flex items-center justify-center text-brand-accent hover:text-white transition-colors" aria-label="Ligar para César Alves">
+          <i class="fa-solid fa-phone text-sm" aria-hidden="true"></i>
+        </a>
+      </div>
 
-      <!-- Desktop Navigation -->
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-300 uppercase tracking-wide" aria-label="Menu principal">
+      <!-- Brand Logo Oficial: Centralizado no mobile, alinhado à esquerda no PC -->
+      <div class="absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0 shrink-0">
+        <a href="#" class="flex items-center group focus-visible:outline-none rounded-lg" aria-label="Página inicial César Alves Elétrica Automotiva">
+          <div class="py-1 px-2.5 rounded-lg bg-black border border-brand-border/80 group-hover:border-brand-accent transition-colors shadow-lg">
+            <img src="logo_horizontal.png" 
+                 alt="Logo César Alves Elétrica Automotiva" 
+                 width="180" 
+                 height="54" 
+                 decoding="async" 
+                 class="h-10 sm:h-12 w-auto object-contain" />
+          </div>
+        </a>
+      </div>
+
+      <!-- Desktop Navigation: Perfeitamente Centralizado -->
+      <nav class="hidden md:flex flex-1 items-center justify-center gap-6 lg:gap-8 text-xs lg:text-sm font-semibold text-slate-300 uppercase tracking-wider" aria-label="Menu principal">
         <a href="#triagem" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Diagnóstico Rápido</a>
         <a href="#servicos" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Serviços</a>
         <a href="#diferenciais" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Diferenciais</a>
@@ -195,6 +204,59 @@
         <a href="#faq" class="hover:text-brand-accent transition-colors focus-visible:outline-none rounded px-1">Dúvidas</a>
       </nav>
 
+      <!-- Desktop Right Balance: Atendimento Rápido -->
+      <div class="hidden md:flex items-center shrink-0">
+        <a href="tel:5511975053297" class="text-xs font-bold text-slate-300 hover:text-brand-accent transition-colors flex items-center gap-1.5 focus-visible:outline-none">
+          <i class="fa-solid fa-phone text-brand-accent text-xs" aria-hidden="true"></i>
+          <span>(11) 97505-3297</span>
+        </a>
+      </div>
+
+      <!-- Mobile: Botão Hambúrguer à direita -->
+      <div class="md:hidden flex items-center">
+        <button id="mobile-menu-btn" 
+                onclick="toggleMobileMenu()" 
+                class="w-10 h-10 rounded-lg bg-brand-panel border border-brand-border flex items-center justify-center text-slate-200 hover:text-white hover:border-brand-accent transition-colors focus-visible:outline-none" 
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false">
+          <i id="menu-icon" class="fa-solid fa-bars text-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile Drawer Menu Interativo -->
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-panel/98 backdrop-blur-xl border-b border-brand-border px-6 py-6 transition-all duration-300 shadow-2xl">
+      <nav class="flex flex-col gap-3 text-sm font-bold uppercase tracking-wider text-slate-200">
+        <a href="#triagem" onclick="toggleMobileMenu()" class="py-3 px-3 rounded-lg hover:bg-brand-card hover:text-brand-accent transition-colors flex items-center justify-between border-b border-brand-border/40">
+          <span>Diagnóstico Rápido</span>
+          <i class="fa-solid fa-chevron-right text-xs text-brand-accent" aria-hidden="true"></i>
+        </a>
+        <a href="#servicos" onclick="toggleMobileMenu()" class="py-3 px-3 rounded-lg hover:bg-brand-card hover:text-brand-accent transition-colors flex items-center justify-between border-b border-brand-border/40">
+          <span>Serviços</span>
+          <i class="fa-solid fa-chevron-right text-xs text-brand-accent" aria-hidden="true"></i>
+        </a>
+        <a href="#diferenciais" onclick="toggleMobileMenu()" class="py-3 px-3 rounded-lg hover:bg-brand-card hover:text-brand-accent transition-colors flex items-center justify-between border-b border-brand-border/40">
+          <span>Diferenciais</span>
+          <i class="fa-solid fa-chevron-right text-xs text-brand-accent" aria-hidden="true"></i>
+        </a>
+        <a href="#localizacao" onclick="toggleMobileMenu()" class="py-3 px-3 rounded-lg hover:bg-brand-card hover:text-brand-accent transition-colors flex items-center justify-between border-b border-brand-border/40">
+          <span>Onde Estamos</span>
+          <i class="fa-solid fa-chevron-right text-xs text-brand-accent" aria-hidden="true"></i>
+        </a>
+        <a href="#faq" onclick="toggleMobileMenu()" class="py-3 px-3 rounded-lg hover:bg-brand-card hover:text-brand-accent transition-colors flex items-center justify-between border-b border-brand-border/40">
+          <span>Dúvidas Frequentes</span>
+          <i class="fa-solid fa-chevron-right text-xs text-brand-accent" aria-hidden="true"></i>
+        </a>
+      </nav>
+
+      <div class="mt-5 pt-4 border-t border-brand-border flex items-center justify-between">
+        <span class="text-xs text-slate-400">Atendimento Telefônico:</span>
+        <a href="tel:5511975053297" class="text-xs font-bold text-white flex items-center gap-1.5 hover:text-brand-accent">
+          <i class="fa-solid fa-phone text-brand-accent text-xs" aria-hidden="true"></i>
+          (11) 97505-3297
+        </a>
+      </div>
     </div>
   </header>
 
@@ -1037,8 +1099,27 @@
     </a>
   </div>
 
-  <!-- SCRIPT PARA TRIAGEM E COPIAR ENDEREÇO -->
+  <!-- SCRIPT PARA TRIAGEM, MENU MOBILE E COPIAR ENDEREÇO -->
   <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-menu');
+      const icon = document.getElementById('menu-icon');
+      const btn = document.getElementById('mobile-menu-btn');
+      const isHidden = menu.classList.contains('hidden');
+
+      if (isHidden) {
+        menu.classList.remove('hidden');
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-xmark');
+        btn.setAttribute('aria-expanded', 'true');
+      } else {
+        menu.classList.add('hidden');
+        icon.classList.remove('fa-xmark');
+        icon.classList.add('fa-bars');
+        btn.setAttribute('aria-expanded', 'false');
+      }
+    }
+
     function sendDiagnostic(symptom) {
       const phone = "5511975053297";
       const message = encodeURIComponent(`Olá César, acessei o site e estou com o seguinte problema no meu veículo:\n\n👉 *${symptom}*\n\nPoderia me orientar e me passar uma estimativa de orçamento?`);
